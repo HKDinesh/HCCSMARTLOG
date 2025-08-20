@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "592671378213",
+    "project_id": "hcc-smartlog",
+    "storage_bucket": "hcc-smartlog.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592671378213:android:b729066b02ad26e95028cc",
+        "android_client_info": {
+          "package_name": "com.loginme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIO5Te_dhY7MaI1mvGHdoZoeWw6TxmzAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592671378213:android:a30a9abca636fd585028cc",
+        "android_client_info": {
+          "package_name": "com.loginme.hcctrichy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIO5Te_dhY7MaI1mvGHdoZoeWw6TxmzAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
