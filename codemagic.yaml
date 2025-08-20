@@ -1,0 +1,31 @@
+workflows:
+  react-native-ios:
+    name: Build and test iOS
+    environment:
+      xcode: latest
+      node: latest
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install
+      - name: Run iOS build
+        script: |
+          npx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle
+    artifacts:
+      - ios/build/**/*.app
+      - ios/build/**/*.ipa
+
+  react-native-android:
+    name: Build and test Android
+    environment:
+      node: latest
+      java: 17
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install
+      - name: Run Android build
+        script: |
+          cd android && ./gradlew assembleDebug
+    artifacts:
+      - android/app/build/outputs/**/*.apk
